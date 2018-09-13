@@ -17,7 +17,7 @@ app = Flask(__name__)
 @app.route("/")
 def hello():
         return "Hello from Python!"
-'''
+
 @app.route('/webhook', methods=['POST'])
 def webhook():
     req = request.get_json(silent=True, force=True)
@@ -90,7 +90,7 @@ def makeWebhookResult(data):
     "fulfillmentText": speech,
      "source": "Yahoo Weather"
     }
-'''
+
 @app.route('/test', methods=['GET'])
 def test():
     return  "Hello there my friend !!"
